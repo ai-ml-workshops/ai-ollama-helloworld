@@ -1,4 +1,4 @@
-package one.codemash25.ai.ollama.helloworld;
+package one.workshop.ai.ollama.helloworld;
 
 import org.springframework.ai.chat.model.ChatResponse;
 import org.springframework.ai.chat.model.ChatModel;
