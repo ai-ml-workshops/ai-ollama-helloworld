@@ -25,9 +25,13 @@
 
 ### To use the chatbot:
 
-Make sure that your **SPRING_AI_OPENAI_API_KEY** is set in .src//main/resources/application.properties
+1. Make sure that your **SPRING_AI_OPENAI_API_KEY** is set in .src//main/resources/application.properties
+
+2. Make sure that you have Ollama up and running the LLM that you've selected to use.  The default LLM that we are using for this exercise is **gemma2**. Please be sure to also download the LLM beforehand.  For more information on how to install and work with Ollama, please see its [README](https://github.com/ollama/ollama/blob/main/README.md)
 
 _Note: Since the LLM is run locally, there will not be any charges but the OPENAI_API_KEY is still required_
+
+Now that you've got all the ducks in a row, you are ready to try this chatbot:
 >`curl --get --data-urlencode 'messsage=Tell me a joke' localhost:8008/ai/ollama/chat`
 
 ##### Note: You can also use the HTTP client, like so:
