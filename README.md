@@ -32,7 +32,9 @@
 _Note: Since the LLM is run locally, there will not be any charges but the OPENAI_API_KEY is still required_
 
 Now that you've got all the ducks in a row, you are ready to try this chatbot:
->`curl --get --data-urlencode 'messsage=Tell me a joke' localhost:8008/ai/ollama/chat`
+```bash
+curl --get --data-urlencode 'message=Tell me a joke' localhost:8080/ai/ollama/chat
+```
 
 ##### Note: You can also use the HTTP client, like so:
 > http://localhost:8080/ai/ollama/chat?message='tell%20me%20a%20joke'
